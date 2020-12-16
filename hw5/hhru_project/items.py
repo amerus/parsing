@@ -12,10 +12,7 @@ class HhruProjectItem(scrapy.Item):
     description = scrapy.Field()
     requirements = scrapy.Field()
     author = scrapy.Field()
-    pass
-
-class HhruCompanyItem(scrapy.Item):
-    _id = scrapy.Field()
     company_url = scrapy.Field()
     company_name = scrapy.Field()
     company_description = scrapy.Field()
+
