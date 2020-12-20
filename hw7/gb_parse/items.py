@@ -20,10 +20,13 @@ class InstaUser(Insta):
     user_id = scrapy.Field()
     user_name = scrapy.Field()
     following_user_name = scrapy.Field()
+    followed_by = scrapy.Field()
+    following = scrapy.Field()
 
 class InstaFollow(scrapy.Item):
     _id = scrapy.Field()
-    # date_parse = scrapy.Field()
     user_name = scrapy.Field()
     user_id = scrapy.Field()
     following_user_name = scrapy.Field()
+    followed_by_user_name = scrapy.Field()
+
